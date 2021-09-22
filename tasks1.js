@@ -12,9 +12,7 @@ for (let i = 0; i < m; i++) {
   for (let j = 0; j < n; j++) {
     if (i === j) {
       mas[i][j] = 0;
-    } else if ((i === 0 && j == 4) || (i === 4 && j === 0)) {
-      mas[i][j] = 0;
-    } else if ((i === 1 && j == 3) || (i === 3 && j === 1)) {
+    } else if (i + 1 === n - j) {
       mas[i][j] = 0;
     } else {
       mas[i][j] = 5;
